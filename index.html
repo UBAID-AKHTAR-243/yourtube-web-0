@@ -4,8 +4,12 @@
         <style>
             body {background-color:blue;}
 
+main-container {background-color:yellow;
+     display:flex;
+     display-direction:column;
+               }
+heading-container{background-color:pink; }
  h1 {color:white;
-     background-color:blue;
      font-size:60px;
      text-align:center;
      }
@@ -15,22 +19,17 @@ h3 {color:white;
    font-size:40px;
      }
 img-container {background-color:red;
-        position: relative; 
+        position: absolute; 
         width:480px;
         height:600px;
         display:flex;
         flex-direction:column;
       }
             
- img {width:485px;
- height: 400px;
- margin-top:0px;
- }
-            
-.container {
+.youtube-container {
   display:flex;
   flex-direction:column;
-  position: relative;
+  position: absolute;
   width:480px;
   height:880px;
   overflow: 100%;
@@ -38,25 +37,14 @@ img-container {background-color:red;
 background-color:green;
 }
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 480;
-  height:400;
-  border: none;
-}
-
             
- .video {background-color:red;
-        position: relative; 
+ .video-container {background-color:red;
+        position: absolute; 
         width:480px;
         height:300px;
         display:flex;
         flex-direction:column;
-                      }        
+      }        
 
 </style>
 
@@ -66,18 +54,25 @@ background-color:green;
 
         <link rel="icon" type="image/x-icon" href="/images/a_4.jpg">
  </head>
-    <body>
-
-  <h3>
+<body>
+<div class="main-container"
+        
+<div class="text-container"
+       <h3>
         welcome to:
         </h3>
         
         <h1>
         MegaSoft.co.
         </h1>
+    </div>
+
+  <div class="audio-container"  
  <audio controls>
             <source src="abdullah-al-buraimi.mp3" type="audio/mp3">    
- </audio>  
+ </audio> 
+ </div>
+      
  <div class="img-container"
     <picture>
     <img src="ubaid.jpg" width="485px" height="400px">
@@ -85,7 +80,7 @@ background-color:green;
     </picture>
  </div>
 
-  <div class="container" > youtube video    
+  <div class="youtube-container" > youtube video    
  <iframe width="485" height="400"
     src="https://www.youtube.com/embed/18lv_Xg6fBRxc07V">
  </iframe>
@@ -94,7 +89,7 @@ background-color:green;
  </iframe>
   </div>
         
-<div class="video" >     
+<div class="video-container"     
    <video width="485" height="400" controls>
         <source src="N_W_NAIN.mp4" type="video/mp4">
    </video >
@@ -102,6 +97,8 @@ background-color:green;
         <source src="titli.mp4" type="video/mp4">
    </video>
 </div>
+        
 
-    </body>
+  </div>      
+</body>
 </html>
