@@ -4,33 +4,35 @@
         <style>
             body {background-color:rgb(177, 177, 219);}
 
-.main-container {background-color:indigo;
+.main-container {background-color:rgb(177, 177, 219);
      display:flex;
      flex-direction:column;
-      position:relative;
-      height:6000px;
-      width:4000px;
-                
-               }
-.heading-container{background-color:pink;
+      position:absolute;
+      height:2000px;
+      width:450px;
+    
+    }
+.heading-container{background-color:rgb(248, 244, 244);
                 display:flex;
+                flex-direction:row;
+                padding-left: 20px;
                 position:sticky;
-                  left:5px;
-                  right:5px;
+                height: 100px;
+                width: 887px;
+                color: #5c57ba;
                  }
- h1 {color:white;
-     font-size:120px;
-     text-align:center;
-     }
+  h1 {padding-left: 200px;
+      font-size: 40px;
+  }
+
             
- h3 {color:white;
-   background-color:blue;
-   font-size:80px;
-     }
+     audio-container {background-color: aquamarine;}
+
+
 .img-container {background-color:red;
-        position: absolute; 
-        width:480px;
-        height:600px;
+        position: relative; 
+        width:490px;
+        height:800px;
         display:flex;
         flex-direction:column;
       }
@@ -44,10 +46,16 @@ height:1000px;
 width:500px;
 }
 
+.iframe {
+  background-color:green;
+  height:500px;
+  width:500px;
+  }
+
             
-.video-container {background-color:red;
-        position: relative; 
-        height:850px;
+.video-container {background-color:blue;
+        position:relative; 
+        height:800px;
         width:500px;
         display:flex;
         flex-direction:column;
@@ -64,44 +72,47 @@ width:500px;
 <body>
 <div class="main-container">
         
-<div class="heading-container"
+<div class="heading-container">
        <h3>
         welcome to:
-        </h3>
-        
-        <h1>
+      </h3>
+
+      <h1>
         MegaSoft.co.
         </h1>
     </div>
 
-  <div class="audio-container" 
+  <div class="audio-container" >
  <audio controls>
             <source src="abdullah-al-buraimi.mp3" type="audio/mp3">    
  </audio> 
  </div>
       
- <div class="img-container"
+ <div class="img-container">
     <picture>
-    <img src="ubaid.jpg" width="485px" height="400px">
-     <img src="k_4.jpg" width="485px" height="400px">
+    <img src="ubaid.jpg" width=490px height=400px>
+    <img src="k_4.jpg" width="490px" height="400px">
     </picture>
  </div>
 
-  <div class="youtube-container" > 
-      youtube video    
- <iframe  src="https://www.youtube.com/embed/18lv_Xg6fBRxc07V">
- </iframe>
- <iframe  src="https://www.youtube.com/embed/bvgUdftYag">
- </iframe>
+  <div class="youtube-container" >     
+      <iframe width="500" height="300" 
+         src="https://www.youtube.com/embed/18lv_Xg6fBRxc07V">
+      </iframe>
+
+      <iframe width="500" height="300" 
+        src="https://www.youtube.com/embed/bvgUdftYag">
+      </iframe>
   </div>
         
-<div class="video-container"     
-   <video height:300px; width:400px;controls>
+<div class="video-container" > 
+    <video width='500' height='289' controls>
         <source src="N_W_NAIN.mp4" type="video/mp4">
-   </video >
-   <video height:300px; width:400px; controls>
+    </video >
+
+    <video width='500' height='275' controls>
         <source src="titli.mp4" type="video/mp4">
-   </video>
+    </video>
 </div>
         
 
